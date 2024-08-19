@@ -1,0 +1,54 @@
+$container: 1200;
+$logo-text-color: var(--accent);
+
+.main {
+  @apply py-3 border-b;
+}
+
+.inner {
+  max-width: $container + px;
+  @apply mx-auto flex items-center justify-between gap-5;
+}
+
+.logo {
+  @apply flex items-center gap-2 overflow-hidden;
+  &_image {
+    @apply w-52 translate-y-1.5;
+  }
+  &_text {
+    color: $logo-text-color;
+    @apply text-lg font-bold uppercase;
+  }
+}
+
+.profile {
+  @apply relative flex items-center gap-3 p-1 cursor-pointer;
+  .image {
+    background: #ced4da no-repeat center / cover;
+    @apply w-8 rounded-full aspect-square;
+  }
+  &:hover {
+    .info .list {
+      @apply visible opacity-100;
+    }
+  }
+  .info {
+    @apply flex flex-col;
+    &_name {
+      @apply text-[15px];
+    }
+    &_role {
+      @apply text-[13px] text-gray-400;
+    }
+    .list {
+      background: rgb(var(--background));
+      @apply absolute z-[1] w-full top-full left-0 flex flex-col py-1 border-2 rounded cursor-auto invisible opacity-0 transition;
+      .item a {
+        @apply px-3 py-2 flex items-center gap-3 text-gray-400 text-sm font-semibold hover:bg-gray-100 hover:text-black transition-all;
+        svg {
+          @apply w-5;
+        }
+      }
+    }
+  }
+}
