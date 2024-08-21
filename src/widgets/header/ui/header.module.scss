@@ -1,12 +1,13 @@
-$container: 1200;
-$logo-text-color: var(--accent);
+$container: 1230;
+$logo-text-color: var(--main);
 
 .main {
-  @apply py-3 border-b;
+  @apply py-3 border-b bg-white;
 }
 
 .inner {
   max-width: $container + px;
+  padding: 0 15px;
   @apply mx-auto flex items-center justify-between gap-5;
 }
 
@@ -33,7 +34,7 @@ $logo-text-color: var(--accent);
     }
   }
   .info {
-    @apply flex flex-col;
+    @apply lg:flex flex-col;
     &_name {
       @apply text-[15px];
     }
@@ -41,14 +42,27 @@ $logo-text-color: var(--accent);
       @apply text-[13px] text-gray-400;
     }
     .list {
-      background: rgb(var(--background));
-      @apply absolute z-[1] w-full top-full left-0 flex flex-col py-1 border-2 rounded cursor-auto invisible opacity-0 transition;
+      @apply absolute bg-background z-[1] top-full flex flex-col py-1 border-2 rounded cursor-auto invisible opacity-0 transition;
       .item a {
         @apply px-3 py-2 flex items-center gap-3 text-gray-400 text-sm font-semibold hover:bg-gray-100 hover:text-black transition-all;
         svg {
           @apply w-5;
         }
       }
+    }
+  }
+}
+
+.actions {
+  @apply flex items-center;
+  .login {
+    color: var(--main);
+    border-color: var(--main);
+    @apply text-lg px-5 py-1 border rounded font-bold;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #fff;
+      background: var(--main);
     }
   }
 }

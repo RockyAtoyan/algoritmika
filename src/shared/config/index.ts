@@ -1,1 +1,1 @@
-export { config } from "./authConfig";
+export { config as authConfig } from "./authConfig";

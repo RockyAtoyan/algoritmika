@@ -1,13 +1,25 @@
 import type { Metadata } from "next";
 import "./globals.scss";
-import { Header } from "@/widgets/header/ui/header";
+import { Header } from "@/widgets/header";
 import localFont from "next/font/local";
+import { Footer } from "@/widgets/footer/ui/footer";
+import { cn } from "@/shared/utils";
 
 const font = localFont({
   src: [
     {
       path: "./../../public/font/CeraPro-Regular.woff2",
       weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./../../public/font/CeraPro-Light.woff2",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "./../../public/font/CeraPro-Thin.woff2",
+      weight: "100",
       style: "normal",
     },
     {
@@ -40,9 +52,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={font.className}>
+      <body className={cn(font.className, "min-h-screen flex flex-col")}>
         <Header />
-        <main>{children}</main>
+        <div className={"flex-[1_0_auto]"}>{children}</div>
+        <Footer />
       </body>
     </html>
   );
