@@ -30,25 +30,41 @@ export const AstrocoinsChargeTable = () => {
               "3376",
               "Кабанович Дмитрий",
               "ПС, ВС 19-15, ЖБИ 2023-2024",
-              <AstrocoinsSelect />,
+              {
+                label: <AstrocoinsSelect />,
+                unclickable: true,
+                wrap: false,
+              },
             ],
             [
               "3376",
               "Кабанович Дмитрий",
               "ПС, ВС 19-15, ЖБИ 2023-2024",
-              <AstrocoinsSelect />,
+              {
+                label: <AstrocoinsSelect />,
+                unclickable: true,
+                wrap: false,
+              },
             ],
             [
               "3376",
               "Кабанович Дмитрий",
               "ПС, ВС 19-15, ЖБИ 2023-2024",
-              <AstrocoinsSelect />,
+              {
+                label: <AstrocoinsSelect />,
+                unclickable: true,
+                wrap: false,
+              },
             ],
             [
               "3376",
               "Кабанович Дмитрий",
               "ПС, ВС 19-15, ЖБИ 2023-2024",
-              <AstrocoinsSelect />,
+              {
+                label: <AstrocoinsSelect />,
+                unclickable: true,
+                wrap: false,
+              },
             ],
             [
               "3376",

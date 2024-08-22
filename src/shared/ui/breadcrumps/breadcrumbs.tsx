@@ -16,6 +16,7 @@ interface Props {
 const pathLabels = {
   dashboard: "Главная",
   groups: "Группы",
+  store: "Магазин",
 };
 
 export const Breadcrumbs = ({

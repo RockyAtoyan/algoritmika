@@ -12,7 +12,7 @@ export default function DashboardLayout({
           <DashboardMenu />
         </div>
       </div>
-      <main className={"pt-4"}>{children}</main>
+      <main className={"pt-4 pb-8"}>{children}</main>
     </>
   );
 }

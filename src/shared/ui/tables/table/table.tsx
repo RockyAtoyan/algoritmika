@@ -2,10 +2,11 @@ import { TableLink } from "@/shared/ui/tables";
 import { FC, ReactNode } from "react";
 import { TableSeparator } from "@/shared/ui/tables";
 import { cn } from "@/shared/utils";
+import { TableLinkItem } from "./table-link";
 
 interface Props {
-  headLabels: string[];
-  rows: Array<string | Array<string | ReactNode>>;
+  headLabels: Array<string | { label: string; center: boolean }>;
+  rows: Array<string | TableLinkItem[]>;
   separatorColspan?: number;
   clickHandler?: Function;
 }
@@ -27,9 +28,10 @@ export const Table: FC<Props> = ({
                 className={cn(
                   "text-start p-3 font-medium text-black/50",
                   index === 0 && "pl-7",
+                  label["center"] && "text-center",
                 )}
               >
-                {label}
+                {label["label"] || label}
               </th>
             );
           })}
