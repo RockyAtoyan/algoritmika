@@ -1,10 +1,4 @@
-import {
-  Breadcrumbs,
-  Button,
-  Pagination,
-  SearchInput,
-  Title,
-} from "@/shared/ui";
+import { Breadcrumbs, Pagination } from "@/shared/ui";
 import { OrdersTable } from "@/widgets/orders-table";
 import { NextPage } from "next";
 

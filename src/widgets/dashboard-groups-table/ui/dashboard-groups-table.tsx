@@ -1,11 +1,19 @@
+"use client";
+
 import { Table } from "@/shared/ui/tables";
 import { plural } from "@/shared/utils";
 import { Badge } from "@/shared/ui";
+import { useRouter } from "next/navigation";
 
 export const DashboardGroupsTable = () => {
+  const router = useRouter();
+
   return (
     <div className={"bg-white border-x rounded w-full"}>
       <Table
+        clickHandler={() => {
+          router.push("/dashboard/groups/1");
+        }}
         separatorColspan={9}
         headLabels={[
           "id",

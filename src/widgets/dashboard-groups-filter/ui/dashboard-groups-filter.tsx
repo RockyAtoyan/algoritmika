@@ -57,7 +57,7 @@ export const DashboardGroupsFilter = () => {
       <div className={"flex items-center gap-3"}>
         <Button asChild variant={"primary"}>
           <Link
-            href={"/dashboard/groups/create-group"}
+            href={"/dashboard/groups/create"}
             className={"flex items-center gap-2 font-semibold pl-3"}
           >
             <Plus className={"w-5"} />

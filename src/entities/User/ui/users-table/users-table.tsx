@@ -8,7 +8,7 @@ export const UsersTable = () => {
   const router = useRouter();
 
   const clickHandler = () => {
-    router.push("/");
+    router.push("/dashboard/students/1");
   };
 
   return (

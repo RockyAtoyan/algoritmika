@@ -10,6 +10,7 @@ import { clsx } from "clsx";
 interface Props {
   homeElement?: ReactNode;
   separator?: ReactNode;
+  lastElement?: ReactNode | string;
   capitalizeLinks?: boolean;
 }
 
@@ -17,12 +18,17 @@ const pathLabels = {
   dashboard: "Главная",
   groups: "Группы",
   store: "Магазин",
+  newsfeeds: "Новости",
+  tickets: "Обратная связь",
+  students: "Ученики",
+  infobase: "База знаний",
 };
 
 export const Breadcrumbs = ({
   homeElement,
   separator,
   capitalizeLinks,
+  lastElement,
 }: Props) => {
   const paths = usePathname();
   const pathNames = paths.split("/").filter((path) => path);
@@ -36,7 +42,11 @@ export const Breadcrumbs = ({
           </li>
         )}
         {pathNames.map((label, index) => {
-          const link = pathLabels[label] || "Страница";
+          const link =
+            pathLabels[label] ||
+            (lastElement && index === pathNames.length - 1
+              ? lastElement
+              : "Страница");
           let href = `/${pathNames.slice(0, index + 1).join("/")}`;
           let itemClasses =
             paths === href ? clsx(styles.link, styles.active) : styles.link;

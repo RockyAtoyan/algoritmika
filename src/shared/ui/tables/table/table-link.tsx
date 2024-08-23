@@ -13,14 +13,16 @@ interface Props {
   values: TableLinkItem[];
   clickHandler?: Function;
   last?: boolean;
+  first?: boolean;
 }
 
-export const TableLink: FC<Props> = ({ last, clickHandler, values }) => {
+export const TableLink: FC<Props> = ({ last, first, clickHandler, values }) => {
   return (
     <tr
       className={clsx(
         "border-y cursor-pointer transition-all hover:bg-gray-100",
         !!last && "border-b-0",
+        !!first && "border-t-0",
       )}
     >
       {values.map((value, index) => {
