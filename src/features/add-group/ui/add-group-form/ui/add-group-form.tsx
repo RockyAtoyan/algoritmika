@@ -119,6 +119,7 @@ export const AddGroupForm: FC<Props> = () => {
                 <div className={"text-sm flex items-center gap-2"}>
                   <span>Расписание</span>
                   <Button
+                    type={"button"}
                     className={"w-6 h-6"}
                     variant={"primary"}
                     size={"icon"}
