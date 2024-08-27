@@ -16,6 +16,14 @@ export { Coins } from "./coins/coins";
 export { Calendar, type CalendarProps } from "./calendar/calendar";
 export { Popover, PopoverContent, PopoverTrigger } from "./popover/popover";
 export {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+  type CarouselApi,
+} from "./carousel/carousel";
+export {
   Select,
   SelectContent,
   SelectGroup,

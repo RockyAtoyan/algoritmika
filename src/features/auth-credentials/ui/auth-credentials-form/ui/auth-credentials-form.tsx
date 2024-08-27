@@ -34,7 +34,6 @@ export const AuthCredentialsForm: FC<Props> = () => {
             </div>
             <Input
               value={password}
-              type={"password"}
               onChange={(event) => setPassword(event.currentTarget.value)}
             />
           </label>

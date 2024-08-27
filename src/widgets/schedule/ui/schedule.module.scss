@@ -1,0 +1,46 @@
+.item {
+  height: 55px;
+  @apply pr-6 text-center;
+}
+
+.column {
+  @apply flex flex-col w-[15%] relative;
+}
+
+.header {
+  background: var(--light);
+  span:last-child {
+    @apply text-sm;
+  }
+  @apply flex flex-col items-center gap-1 h-[70px] py-[10px] text-white;
+}
+
+.grid {
+  @apply flex flex-col;
+  &_item {
+    height: 55px;
+    @apply border-r border-b;
+  }
+}
+
+.content {
+  @apply absolute w-full;
+  top: 70px;
+  &_wrapper {
+    @apply absolute w-full flex;
+    height: 82px;
+  }
+  &_item {
+    @apply w-full flex justify-center items-center hover:opacity-80;
+    & > div {
+      @apply flex flex-col text-sm text-white text-nowrap overflow-hidden max-w-[90%];
+      span:last-child {
+        @apply block text-[12px] text-center;
+      }
+    }
+    background: #5fb3b3;
+    flex-grow: 1;
+    flex-basis: 0;
+    box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.1);
+  }
+}

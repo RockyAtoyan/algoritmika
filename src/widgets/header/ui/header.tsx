@@ -49,7 +49,7 @@ export const Header = () => {
                   )}
                 >
                   <li className={styles.item}>
-                    <Link href={"/profile"}>
+                    <Link href={"/lk/profile"}>
                       <User />
                       <span>Профиль</span>
                     </Link>
@@ -77,6 +77,7 @@ export const Header = () => {
             <Link className={styles.login} href={"/login"}>
               Вход
             </Link>
+            <MenuButton />
           </div>
         )}
       </div>

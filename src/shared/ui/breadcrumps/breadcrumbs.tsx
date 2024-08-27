@@ -16,12 +16,15 @@ interface Props {
 
 const pathLabels = {
   dashboard: "Главная",
+  lk: "Главная",
+  profile: "Личные данные",
   groups: "Группы",
   store: "Магазин",
   newsfeeds: "Новости",
   tickets: "Обратная связь",
   students: "Ученики",
   infobase: "База знаний",
+  timetable: "Расписание",
 };
 
 export const Breadcrumbs = ({
@@ -37,9 +40,12 @@ export const Breadcrumbs = ({
     <div>
       <ul className={styles.container}>
         {homeElement && (
-          <li className={styles.link}>
-            <Link href={"/"}>{homeElement}</Link>
-          </li>
+          <>
+            <li className={styles.link}>
+              <Link href={"/"}>{homeElement}</Link>
+            </li>
+            <span>/</span>
+          </>
         )}
         {pathNames.map((label, index) => {
           const link =

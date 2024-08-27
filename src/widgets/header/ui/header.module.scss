@@ -54,15 +54,13 @@ $logo-text-color: var(--main);
 }
 
 .actions {
-  @apply flex items-center;
+  @apply flex items-center gap-3;
   .login {
-    color: var(--main);
-    border-color: var(--main);
-    @apply text-lg px-5 py-1 border rounded font-bold;
+    @apply text-lg px-5 py-1 border border-main text-main rounded font-bold;
     transition: all 0.3s ease;
     &:hover {
       color: #fff;
-      background: var(--main);
+      @apply bg-main;
     }
   }
 }

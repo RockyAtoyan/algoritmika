@@ -10,8 +10,7 @@
     &.active {
       a,
       span {
-        color: var(--main);
-        @apply font-semibold;
+        @apply font-semibold text-main;
       }
     }
   }

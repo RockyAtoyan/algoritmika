@@ -4,8 +4,11 @@ import { Button } from "@/shared/ui";
 import { Menu, X } from "lucide-react";
 import styles from "@/widgets/dashboard-menu/ui/dashboard-menu.module.scss";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export const MenuButton = () => {
+  const pathname = usePathname();
+
   const [open, setOpen] = useState(false);
 
   const clickHandler = () => {
@@ -39,6 +42,8 @@ export const MenuButton = () => {
       document.removeEventListener("click", handleClick);
     };
   }, []);
+
+  if (!pathname.includes("dashboard")) return null;
 
   return (
     <Button

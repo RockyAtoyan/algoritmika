@@ -65,7 +65,7 @@ export const DashboardGroupsFilter = () => {
           </Link>
         </Button>
         <Button asChild variant={"primary"} size={"icon"}>
-          <Link href={"/dashboard/groups/timetable"}>
+          <Link href={"/dashboard/groups/timetable/teachers"}>
             <CalendarDays />
           </Link>
         </Button>
