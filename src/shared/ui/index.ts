@@ -13,6 +13,7 @@ export { Pagination } from "./pagination";
 export { InputWithIcon } from "./input-with-icon/input-with-icon";
 export { DatePicker } from "./date-picker/date-picker";
 export { Coins } from "./coins/coins";
+export { Loader } from "./loader/loader";
 export { Calendar, type CalendarProps } from "./calendar/calendar";
 export { Popover, PopoverContent, PopoverTrigger } from "./popover/popover";
 export {
