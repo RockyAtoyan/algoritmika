@@ -19,9 +19,6 @@ export const Header = () => {
             width={500}
             height={144}
           />
-          <span className={styles.logo_text}>
-            г. Екатеринбург, Кировский р-он
-          </span>
         </Link>
         {authUser && (
           <div className={"flex items-center"}>
