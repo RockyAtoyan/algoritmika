@@ -29,15 +29,6 @@ export const DashboardMenu = () => {
       <Link
         className={cn(
           styles.item,
-          pathname.includes("dashboard/newsfeeds") && styles.active,
-        )}
-        href={"/dashboard/newsfeeds"}
-      >
-        Новости
-      </Link>
-      <Link
-        className={cn(
-          styles.item,
           pathname.includes("dashboard/store") && styles.active,
         )}
         href={"/dashboard/store"}
@@ -52,15 +43,6 @@ export const DashboardMenu = () => {
         href={"/dashboard/tickets"}
       >
         Заявки
-      </Link>
-      <Link
-        className={cn(
-          styles.item,
-          pathname.includes("dashboard/ticketsRatings") && styles.active,
-        )}
-        href={"/dashboard/ticketsRatings"}
-      >
-        Оценки и отзывы
       </Link>
     </div>
   );
