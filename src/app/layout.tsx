@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.scss";
 import { Header } from "@/widgets/header";
-import localFont from "next/font/local";
 import { Footer } from "@/widgets/footer/ui/footer";
 import { cn } from "@/shared/utils";
+import { Providers } from "@/processes/providers";
+import localFont from "next/font/local";
 
 const font = localFont({
   src: [
@@ -53,9 +54,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(font.className, "min-h-screen flex flex-col")}>
-        <Header />
-        <div className={"flex-[1_0_auto]"}>{children}</div>
-        <Footer />
+        <Providers>
+          <Header />
+          <div className={"flex-[1_0_auto]"}>{children}</div>
+          <Footer />
+        </Providers>
       </body>
     </html>
   );

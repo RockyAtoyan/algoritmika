@@ -5,7 +5,7 @@ export const LkPage = () => {
     <div>
       <h1 className={"text-6xl font-black text-main mb-8"}>Привет, Даниил!</h1>
       <Breadcrumbs />
-      <div className={"mt-3 bg-white border rounded p-6"}>
+      <div className={"mt-3 bg-background border rounded p-6"}>
         <h3 className={"text-2xl font-semibold"}>
           Добро пожаловать в личный кабинет
         </h3>

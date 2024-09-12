@@ -17,7 +17,7 @@ export const OrderInfo: FC<Props> = () => {
           Оформлен
         </Badge>
       </div>
-      <div className={"mt-5 rounded border bg-white pb-4"}>
+      <div className={"mt-5 rounded border bg-background pb-4"}>
         <div className={"p-4 px-6 border-b"}>
           <h3 className={"text-lg"}>Данные заказа</h3>
         </div>

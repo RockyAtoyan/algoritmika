@@ -21,7 +21,7 @@ export const InfobaseTable = () => {
           <SearchInput />
         </div>
       </div>
-      <div className={"mt-5 bg-white rounded border-x"}>
+      <div className={"mt-5 bg-background rounded border-x"}>
         <Table
           headLabels={["#", "Название", "Для роли", "Ссылка", "Создатель"]}
           rows={[]}

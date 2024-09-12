@@ -7,7 +7,7 @@ export default function DashboardLayout({
 }>) {
   return (
     <>
-      <div className={"w-full border-b bg-white"}>
+      <div className={"w-full border-b bg-background"}>
         <div className={"max-w-[var(--container)] px-4 mx-auto"}>
           <DashboardMenu />
         </div>

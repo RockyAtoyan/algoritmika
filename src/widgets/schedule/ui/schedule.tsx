@@ -8,7 +8,7 @@ export const Schedule = () => {
   return (
     <div>
       <h3 className={"font-bold text-2xl mb-3"}>Бондаренко Мария Михайловна</h3>
-      <div className={"flex bg-white rounded pl-6"}>
+      <div className={"flex bg-background rounded pl-6"}>
         <div className={cn("flex flex-col pt-[55px]")}>
           <div className={cn(styles.item)}>10:00</div>
           <div className={cn(styles.item)}>11:00</div>

@@ -11,7 +11,7 @@ export const AuthCredentialsForm: FC<Props> = () => {
   const [password, setPassword] = useState("");
 
   return (
-    <div className={"bg-white rounded border"}>
+    <div className={"bg-background rounded border"}>
       <div className={"p-6 px-8"}>
         <span className={"font-bold uppercase"}>АВТОРИЗАЦИЯ БО+ЛК</span>
         <div className={"mt-4 flex items-center justify-between gap-3"}>

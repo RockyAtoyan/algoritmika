@@ -20,7 +20,7 @@
   }
   &:hover,
   &.active {
-    @apply text-black;
+    @apply text-primary;
     &::before {
       opacity: 1;
       visibility: visible;

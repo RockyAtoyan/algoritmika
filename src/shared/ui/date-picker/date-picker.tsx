@@ -37,7 +37,7 @@ export const DatePicker: FC<Props> = ({
           )}
           {...props}
         >
-          <CalendarIcon className="text-black/40 ml-3 mr-4 w-5" />
+          <CalendarIcon className="text-primary/40 ml-3 mr-4 w-5" />
           {date ? format(date, "dd.MM.yyyy") : <span>Выбрать дату</span>}
         </Button>
       </PopoverTrigger>

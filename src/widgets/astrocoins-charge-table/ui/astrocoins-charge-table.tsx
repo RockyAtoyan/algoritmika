@@ -15,7 +15,7 @@ import { FC } from "react";
 
 export const AstrocoinsChargeTable = () => {
   return (
-    <div className={"bg-white rounded border"}>
+    <div className={"bg-background rounded border"}>
       <div className={"py-3 pl-7"}>
         <CardTitle>Начисление астрокоинов</CardTitle>
       </div>

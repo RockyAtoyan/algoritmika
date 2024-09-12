@@ -2,7 +2,7 @@ import { Table } from "@/shared/ui/tables";
 
 export const StudentCoinsLog = () => {
   return (
-    <div className={"bg-white rounded border"}>
+    <div className={"bg-background rounded border"}>
       <div className={"py-4 px-6 border-b"}>
         <h3 className={"text-lg font-semibold"}>Журнал астрокоинов</h3>
       </div>
@@ -18,7 +18,7 @@ export const StudentCoinsLog = () => {
           ]}
           rows={[
             [
-              <span className={"text-black/40"}>13489</span>,
+              <span className={"text-primary/40"}>13489</span>,
               <div className={"flex flex-col"}>
                 <span>25.05.24</span>
                 <span>13:33</span>
@@ -29,7 +29,7 @@ export const StudentCoinsLog = () => {
               "Ударцев М",
             ],
             [
-              <span className={"text-black/40"}>13489</span>,
+              <span className={"text-primary/40"}>13489</span>,
               <div className={"flex flex-col"}>
                 <span>25.05.24</span>
                 <span>13:33</span>
@@ -40,7 +40,7 @@ export const StudentCoinsLog = () => {
               "Хамоян МИ",
             ],
             [
-              <span className={"text-black/40"}>13489</span>,
+              <span className={"text-primary/40"}>13489</span>,
               <div className={"flex flex-col"}>
                 <span>25.05.24</span>
                 <span>13:33</span>
@@ -51,7 +51,7 @@ export const StudentCoinsLog = () => {
               "Хамоян МИ",
             ],
             [
-              <span className={"text-black/40"}>13489</span>,
+              <span className={"text-primary/40"}>13489</span>,
               <div className={"flex flex-col"}>
                 <span>25.05.24</span>
                 <span>13:33</span>
@@ -62,7 +62,7 @@ export const StudentCoinsLog = () => {
               "Хамоян МИ",
             ],
             [
-              <span className={"text-black/40"}>13489</span>,
+              <span className={"text-primary/40"}>13489</span>,
               <div className={"flex flex-col"}>
                 <span>25.05.24</span>
                 <span>13:33</span>
@@ -73,7 +73,7 @@ export const StudentCoinsLog = () => {
               "Хамоян МИ",
             ],
             [
-              <span className={"text-black/40"}>13489</span>,
+              <span className={"text-primary/40"}>13489</span>,
               <div className={"flex flex-col"}>
                 <span>25.05.24</span>
                 <span>13:33</span>
@@ -84,7 +84,7 @@ export const StudentCoinsLog = () => {
               "Хамоян МИ",
             ],
             [
-              <span className={"text-black/40"}>13489</span>,
+              <span className={"text-primary/40"}>13489</span>,
               <div className={"flex flex-col"}>
                 <span>25.05.24</span>
                 <span>13:33</span>
@@ -95,7 +95,7 @@ export const StudentCoinsLog = () => {
               "Хамоян МИ",
             ],
             [
-              <span className={"text-black/40"}>13489</span>,
+              <span className={"text-primary/40"}>13489</span>,
               <div className={"flex flex-col"}>
                 <span>25.05.24</span>
                 <span>13:33</span>
@@ -106,7 +106,7 @@ export const StudentCoinsLog = () => {
               "Хамоян МИ",
             ],
             [
-              <span className={"text-black/40"}>13489</span>,
+              <span className={"text-primary/40"}>13489</span>,
               <div className={"flex flex-col"}>
                 <span>25.05.24</span>
                 <span>13:33</span>

@@ -5,7 +5,7 @@ export const TicketsTable = () => {
   return (
     <div className={"mt-8"}>
       <Title>Заявки</Title>
-      <div className={"mt-5 bg-white rounded border-x"}>
+      <div className={"mt-5 bg-background rounded border-x"}>
         <Table
           headLabels={["#", "От", "Адресовано", "Дата создания", "Статус"]}
           rows={[]}

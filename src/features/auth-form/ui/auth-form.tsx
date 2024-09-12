@@ -17,7 +17,7 @@ export const AuthForm = () => {
   };
 
   return (
-    <div className={"bg-white border rounded p-8"}>
+    <div className={"bg-background border rounded p-8"}>
       <div className={"mb-8"}>
         <h3 className={"text-xl font-semibold"}>Вход</h3>
       </div>

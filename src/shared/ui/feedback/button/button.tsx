@@ -6,7 +6,7 @@ export const Button = () => {
   return (
     <Link
       className={
-        "w-max bg-white p-3 border rounded flex items-center gap-3 font-semibold transition-all hover:bg-main hover:text-white hover:border-[var(--accent)]"
+        "w-max bg-background p-3 border rounded flex items-center gap-3 font-semibold transition-all hover:bg-main hover:text-background hover:border-[var(--accent)]"
       }
       href={"/dashboard/tickets"}
     >

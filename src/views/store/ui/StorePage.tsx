@@ -13,7 +13,7 @@ export const StorePage: NextPage<Props> = ({ searchParams }) => {
   return (
     <div>
       <Breadcrumbs homeElement={"Главная"} />
-      <div className={"bg-white border rounded mt-2"}>
+      <div className={"bg-background border rounded mt-2"}>
         <h3 className={"text-lg p-3"}>Магазин</h3>
       </div>
       <div className={"flex gap-8 mt-5"}>

@@ -55,7 +55,7 @@ export const ProductSlider: FC<Props> = ({ images }) => {
     <div className={"flex flex-col gap-5"}>
       <div
         className={
-          "w-full aspect-square bg-white border rounded overflow-hidden"
+          "w-full aspect-square bg-background border rounded overflow-hidden"
         }
       >
         <Image
@@ -86,7 +86,7 @@ export const ProductSlider: FC<Props> = ({ images }) => {
                       width={500}
                       height={500}
                       className={cn(
-                        "w-full h-full object-cover object-center bg-white rounded border transition",
+                        "w-full h-full object-cover object-center bg-background rounded border transition",
                         index === current && "border-main",
                       )}
                     />
@@ -105,7 +105,7 @@ export const ProductSlider: FC<Props> = ({ images }) => {
                 <div
                   key={index}
                   className={cn(
-                    "w-1/3 aspect-square overflow-hidden cursor-pointer bg-white rounded border transition",
+                    "w-1/3 aspect-square overflow-hidden cursor-pointer bg-background rounded border transition",
                     index === current && "border-main",
                   )}
                   onClick={() => {

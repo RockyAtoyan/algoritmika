@@ -9,7 +9,7 @@ export const DashboardGroupsTable = () => {
   const router = useRouter();
 
   return (
-    <div className={"bg-white border-x rounded w-full"}>
+    <div className={"bg-background border-x rounded w-full"}>
       <Table
         clickHandler={() => {
           router.push("/dashboard/groups/1");

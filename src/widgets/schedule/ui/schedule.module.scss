@@ -12,7 +12,7 @@
   span:last-child {
     @apply text-sm;
   }
-  @apply flex flex-col items-center gap-1 h-[70px] py-[10px] text-white;
+  @apply flex flex-col items-center gap-1 h-[70px] py-[10px] text-background;
 }
 
 .grid {
@@ -33,7 +33,7 @@
   &_item {
     @apply w-full flex justify-center items-center hover:opacity-80;
     & > div {
-      @apply flex flex-col text-sm text-white text-nowrap overflow-hidden max-w-[90%];
+      @apply flex flex-col text-sm text-background text-nowrap overflow-hidden max-w-[90%];
       span:last-child {
         @apply block text-[12px] text-center;
       }

@@ -26,7 +26,7 @@ export const Table: FC<Props> = ({
               <th
                 key={index}
                 className={cn(
-                  "text-start p-3 font-medium text-black/50 border-b",
+                  "text-start p-3 font-medium text-primary/50 border-b",
                   index === 0 && "pl-7",
                   label["center"] && "text-center",
                 )}

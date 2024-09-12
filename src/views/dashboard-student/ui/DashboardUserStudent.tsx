@@ -20,7 +20,7 @@ export const DashboardUserStudent: NextPage<Props> = ({ params }) => {
         <Link
           href={"/dashboard/users/1"}
           className={
-            "text-black/50 block w-max mt-2 text-lg transition hover:text-black/80"
+            "text-primary/50 block w-max mt-2 text-lg transition hover:text-primary/80"
           }
         >
           Родитель: Ударцева Галина

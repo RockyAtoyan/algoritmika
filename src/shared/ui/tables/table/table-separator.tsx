@@ -13,7 +13,7 @@ export const TableSeparator: FC<Props> = ({ value, clickHandler, colspan }) => {
   return (
     <tr
       onClick={clickHandler}
-      className={clsx("cursor-pointer bg-[var(--light)] text-white")}
+      className={clsx("cursor-pointer bg-[var(--light)] text-background")}
     >
       <td colSpan={colspan} className={"py-3 pl-7 text-nowrap"}>
         {value}

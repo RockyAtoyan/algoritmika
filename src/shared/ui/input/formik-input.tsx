@@ -13,7 +13,7 @@ export const FormikInput = ({ Icon, ...props }) => {
 
   if (Icon) {
     return (
-      <div className={"relative text-black/40 flex items-stretch gap-2"}>
+      <div className={"relative text-primary/40 flex items-stretch gap-2"}>
         <Icon
           className={
             "absolute w-5 top-1/2 -translate-y-1/2 -translate-x-1/2 left-6 "
@@ -21,7 +21,7 @@ export const FormikInput = ({ Icon, ...props }) => {
         />
         <Input
           className={cn(
-            "pl-12 text-black",
+            "pl-12 text-primary",
             props["type"] === "password" && "px-12",
           )}
           {...field}
@@ -55,9 +55,9 @@ export const FormikInput = ({ Icon, ...props }) => {
     );
   }
   if (props["type"] === "password") {
-    <div className={"relative text-black/40 flex items-stretch gap-2"}>
+    <div className={"relative text-primary/40 flex items-stretch gap-2"}>
       <Input
-        className={cn("px-12 text-black")}
+        className={cn("px-12 text-primary")}
         {...field}
         {...props}
         type={isPassword ? "password" : "text"}

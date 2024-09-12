@@ -50,7 +50,7 @@ export const DashboardGroupsFilter = () => {
           checked={unactive}
           onCheckedChange={switchHandler}
         />
-        <span className={"text-sm text-black/50"}>
+        <span className={"text-sm text-primary/50"}>
           не активные группы {unactive ? "показаны" : "скрыты"}
         </span>
       </div>
@@ -69,7 +69,7 @@ export const DashboardGroupsFilter = () => {
             <CalendarDays />
           </Link>
         </Button>
-        <div className={"relative text-black/40 flex items-stretch gap-2"}>
+        <div className={"relative text-primary/40 flex items-stretch gap-2"}>
           <Search
             className={
               "absolute w-5 top-1/2 -translate-y-1/2 -translate-x-1/2 left-6 "
@@ -78,7 +78,7 @@ export const DashboardGroupsFilter = () => {
           <Input
             value={search}
             onChange={(e) => setSearch(e.currentTarget.value)}
-            className={"pl-12 text-black"}
+            className={"pl-12 text-primary"}
             placeholder={"Поиск"}
             onKeyUp={searchHandler}
           />

@@ -10,7 +10,7 @@ export const UserInfoForm = () => {
   const [phone, setPhone] = useState("");
 
   return (
-    <div className={"bg-white rounded border"}>
+    <div className={"bg-background rounded border"}>
       <div className={"border-b p-3 px-8 text-lg"}>Общие данные</div>
       <div className={"p-5 px-8 flex flex-col gap-4"}>
         <label className={"flex flex-col gap-2"}>

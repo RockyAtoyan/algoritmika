@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Database, Gauge, User } from "lucide-react";
 import { cn } from "@/shared/utils";
 import { MenuButton } from "./menu-button";
+import { ThemeButton } from "@/shared/ui/theme-button/theme-button";
 
 export const Header = () => {
   const authUser = true;
@@ -22,6 +23,9 @@ export const Header = () => {
         </Link>
         {authUser && (
           <div className={"flex items-center"}>
+            <div className={"mr-5"}>
+              <ThemeButton />
+            </div>
             <div className={styles.profile}>
               <Image
                 className={styles.image}

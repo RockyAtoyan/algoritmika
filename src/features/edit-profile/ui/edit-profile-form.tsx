@@ -13,7 +13,7 @@ export const EditProfileForm: FC<Props> = () => {
   };
 
   return (
-    <div className={"bg-white border rounded"}>
+    <div className={"bg-background border rounded"}>
       <div className={"border-b py-4 px-6"}>
         <h3 className={"text-lg"}>Мой профиль</h3>
       </div>

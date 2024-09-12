@@ -34,7 +34,7 @@ export const ProductPage: NextPage<Props> = ({ params }) => {
           <h1 className={"mb-1 block text-3xl font-semibold "}>
             Авторучка Алгоритмика (пластиковая)
           </h1>
-          <span className={"block mb-5 text-2xl text-black/50"}>
+          <span className={"block mb-5 text-2xl text-primary/50"}>
             В наличии: 6 шт.
           </span>
           <div className={"mb-3 flex items-center gap-3"}>

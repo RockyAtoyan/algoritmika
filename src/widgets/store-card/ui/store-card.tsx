@@ -19,7 +19,7 @@ interface Props {}
 
 export const StoreCard: FC<Props> = () => {
   return (
-    <div className={"bg-white border rounded"}>
+    <div className={"bg-background border rounded"}>
       <div className={"w-full aspect-square"}>
         {/*<Image*/}
         {/*  src={*/}
@@ -67,7 +67,7 @@ export const StoreCard: FC<Props> = () => {
         <Link href={"/store/1"} className={"block text-lg hover:underline"}>
           Авторучка Алгоритмика (пластиковая)
         </Link>
-        <span className={"text-sm text-black/40"}>В наличии: 6 шт.</span>
+        <span className={"text-sm text-primary/40"}>В наличии: 6 шт.</span>
         <div className={"flex items-center gap-3 justify-between mt-4"}>
           <div className={"-mt-1"}>
             <Coins>100</Coins>

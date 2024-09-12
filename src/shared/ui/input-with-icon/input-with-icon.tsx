@@ -6,13 +6,13 @@ interface Props extends InputProps {
 
 export const InputWithIcon: FC<Props> = ({ Icon, ...props }: any) => {
   return (
-    <div className={"relative text-black/40 flex items-stretch gap-2"}>
+    <div className={"relative text-primary/40 flex items-stretch gap-2"}>
       <Icon
         className={
           "absolute w-5 top-1/2 -translate-y-1/2 -translate-x-1/2 left-6 "
         }
       />
-      <Input className={"pl-12 text-black"} {...props} />
+      <Input className={"pl-12 text-primary"} {...props} />
     </div>
   );
 };

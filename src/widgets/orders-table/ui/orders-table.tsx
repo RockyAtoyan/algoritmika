@@ -26,7 +26,7 @@ export const OrdersTable = () => {
           <SearchInput />
         </div>
       </div>
-      <div className={"mt-5 bg-white rounded border-x"}>
+      <div className={"mt-5 bg-background rounded border-x"}>
         <Table
           clickHandler={() => {
             router.push(`/dashboard/store/697`);
@@ -384,7 +384,7 @@ const OrderTableUserCard: FC<OrderTableUserCardProps> = () => {
       />
       <div className={"flex flex-col"}>
         <span>Семкина Анжелика</span>
-        <span className={"text-black/60"}>ПС, ВС 19-15, ЖБИ 2023-2024</span>
+        <span className={"text-primary/60"}>ПС, ВС 19-15, ЖБИ 2023-2024</span>
       </div>
     </div>
   );

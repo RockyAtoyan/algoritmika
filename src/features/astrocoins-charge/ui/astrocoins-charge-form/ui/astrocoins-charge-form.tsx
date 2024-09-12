@@ -10,7 +10,7 @@ export const AstrocoinsChargeForm: FC<Props> = () => {
   const [reason, setReason] = useState("");
 
   return (
-    <div className={"bg-white rounded border"}>
+    <div className={"bg-background rounded border"}>
       <div className={"p-8 px-8 pb-10"}>
         <span className={"font-bold uppercase"}>Астрокоины</span>
         <div className={"font-bold mt-1"}>

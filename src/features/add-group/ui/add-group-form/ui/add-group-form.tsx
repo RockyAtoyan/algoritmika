@@ -41,7 +41,7 @@ export const AddGroupForm: FC<Props> = () => {
   };
 
   return (
-    <div className={"bg-white border rounded"}>
+    <div className={"bg-background border rounded"}>
       <div className={"border-b py-4 px-6"}>
         <h3 className={"text-lg"}>Общие данные</h3>
       </div>
@@ -278,8 +278,8 @@ export const AddGroupForm: FC<Props> = () => {
                 />
                 <div
                   className={cn(
-                    "text-sm text-black/40 transition",
-                    values["isActive"] && "text-black",
+                    "text-sm text-primary/40 transition",
+                    values["isActive"] && "text-primary",
                   )}
                 >
                   Группа активна
