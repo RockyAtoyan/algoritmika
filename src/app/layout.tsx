@@ -56,7 +56,9 @@ export default function RootLayout({
       <body className={cn(font.className, "min-h-screen flex flex-col")}>
         <Providers>
           <Header />
-          <div className={"flex-[1_0_auto]"}>{children}</div>
+          <div className={"flex-[1_0_auto] dark:bg-background/95"}>
+            {children}
+          </div>
           <Footer />
         </Providers>
       </body>

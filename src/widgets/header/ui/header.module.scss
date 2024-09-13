@@ -44,7 +44,7 @@ $logo-text-color: var(--main);
     .list {
       @apply absolute bg-background z-[1] top-full flex flex-col py-1 border-2 rounded cursor-auto invisible opacity-0 transition;
       .item a {
-        @apply px-3 py-2 flex items-center gap-3 text-gray-400 text-sm hover:bg-gray-100 hover:text-primary transition-all;
+        @apply px-3 py-2 flex items-center gap-3 text-gray-400 text-sm hover:bg-gray-100 hover:text-black transition-all;
         svg {
           @apply w-5;
         }

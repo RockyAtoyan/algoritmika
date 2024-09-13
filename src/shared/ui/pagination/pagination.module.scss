@@ -17,12 +17,14 @@
     font-size: 16px;
     min-width: 32px;
 
+    @apply text-primary;
+
     &.dots:hover {
       background-color: transparent;
       cursor: default;
     }
     &:hover {
-      background-color: rgba(0, 0, 0, 0.04);
+      @apply bg-primary/5;
       cursor: pointer;
     }
 
@@ -40,8 +42,9 @@
         display: inline-block;
         width: 0.4em;
         height: 0.4em;
-        border-right: 0.12em solid rgba(0, 0, 0, 0.87);
-        border-top: 0.12em solid rgba(0, 0, 0, 0.87);
+        border-right: 0.12em solid;
+        border-top: 0.12em solid;
+        @apply border-primary/85;
       }
 
       &.left {
@@ -57,8 +60,9 @@
       pointer-events: none;
 
       .arrow::before {
-        border-right: 0.12em solid rgba(0, 0, 0, 0.43);
-        border-top: 0.12em solid rgba(0, 0, 0, 0.43);
+        border-right: 0.12em solid;
+        border-top: 0.12em solid;
+        @apply border-primary/50;
       }
 
       &:hover {

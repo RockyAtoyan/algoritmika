@@ -20,7 +20,7 @@ export const TableLink: FC<Props> = ({ last, first, clickHandler, values }) => {
   return (
     <tr
       className={clsx(
-        "border-y cursor-pointer transition-all hover:bg-gray-100",
+        "border-y cursor-pointer transition-all hover:bg-gray-100 dark:hover:bg-gray-700",
         !!last && "border-b-0",
         !!first && "border-t-0",
       )}

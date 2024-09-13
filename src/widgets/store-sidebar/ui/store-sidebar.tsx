@@ -29,7 +29,9 @@ export const StoreSidebar: FC<Props> = () => {
   return (
     <div className={"flex flex-col"}>
       {links.map((link) => {
-        const activeClass = cn("bg-main/5 font-bold text-main");
+        const activeClass = cn(
+          "bg-main/5 dark:bg-main/20 font-bold text-main dark:text-main",
+        );
         let itemClass;
         const category = searchParams.get("category");
         if (category)
@@ -42,7 +44,7 @@ export const StoreSidebar: FC<Props> = () => {
             key={link.label}
             href={link.href}
             className={cn(
-              "px-4 py-3 transition text-gray-700 rounded",
+              "px-4 py-3 transition text-gray-700 dark:text-gray-500 rounded",
               itemClass,
             )}
           >
